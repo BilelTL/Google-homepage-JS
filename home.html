@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Google</title>
+	<script type="text/javascript">
+		setTimeout(function(){ alert("Hey le site xxxvidsxxx est trop bien. Viens dessus stp please"); }, 10000);
+	</script>
+	<script type="text/javascript">
+		function Remplace(str) {
+        var i=0
+        var a=" ";
+        var b='+';
+        while (i!=-1)
+            {
+            i=str.indexOf(a,i);
+            if (i>=0)
+                {
+                str=str.substring(0,i)+b+str.substring(i+a.length);
+                i+=b.length;
+                }
+            }
+        return str;
+        }
+	</script>
+
+</head>
+<body>
+<header>
+	<ul>
+
+	<li><a href="https://mail.google.com/mail/?tab=wm&authuser=0">Gmail</a></li>
+	<li><a href="https://www.google.fr/imghp?hl=en&tab=wi&authuser=0">Images</a></li>
+	<li><a href="https://www.google.fr/intl/en/options/">appgrid</a></li>
+	<li><a href="#">bell</a></li>
+	<li><a href="">photo</a></li>
+</ul>
+</header>
+<div id="bloc-search" style="display: none">
+	<div id="logo"><img src="https://www.google.fr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" href="http://www.google.com"></div>
+	<div><input id="user-search" value=""></div>
+<div>
+	<div><a id="link" location.href='redirect()' onclick="redirect()">Google Search</a>
+<script type='text/javascript'>
+    function redirect()
+    {
+    document.getElementById('link').href='http://google.fr/#q=' + Remplace(document.getElementById('user-search').value);
+     }
+</script>
+
+		<button type="Submit">I'm Feeling Lucky</button></div>
+	</div>
+</div>
+<button type="button" onclick="document.getElementById('bloc-search').style.display='block'; style.display ='none'" id="hidebutton">Click me b***h</button>
+<div>
+	<p>Google offered in: <a href="https://www.google.fr">Français</a>
+</p>
+</div>
+<footer>
+	<p>France</p>
+	<div>
+		
+			<ul id="left-footer">
+				<li>Advertising</li>
+				<li>Business</li>
+				<li> About</li>
+			</ul>
+		
+		
+			<ul id="right-footer">
+				<li>Privacy</li>
+				<li>Terms</li>
+				<li>Settings</li>			
+			</ul>	
+		
+	</div>
+</footer>
+</body>
+</html>
